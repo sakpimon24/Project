@@ -46,6 +46,8 @@
             DelBtn = new Button();
             AddBtn = new Button();
             folderBrowserDialog1 = new FolderBrowserDialog();
+            CustomerName = new TextBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)AllData).BeginInit();
             SuspendLayout();
             // 
@@ -125,7 +127,7 @@
             ProductName.Font = new Font("Segoe UI", 12F);
             ProductName.Location = new Point(465, 134);
             ProductName.Name = "ProductName";
-            ProductName.Size = new Size(292, 29);
+            ProductName.Size = new Size(411, 29);
             ProductName.TabIndex = 8;
             // 
             // ProductType
@@ -133,15 +135,15 @@
             ProductType.Font = new Font("Segoe UI", 12F);
             ProductType.Location = new Point(465, 338);
             ProductType.Name = "ProductType";
-            ProductType.Size = new Size(292, 29);
+            ProductType.Size = new Size(411, 29);
             ProductType.TabIndex = 11;
             // 
             // ClearBtn
             // 
             ClearBtn.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            ClearBtn.Location = new Point(640, 382);
+            ClearBtn.Location = new Point(506, 432);
             ClearBtn.Name = "ClearBtn";
-            ClearBtn.Size = new Size(118, 94);
+            ClearBtn.Size = new Size(128, 44);
             ClearBtn.TabIndex = 18;
             ClearBtn.Text = "ล้างทั้งหมด";
             ClearBtn.UseVisualStyleBackColor = true;
@@ -152,9 +154,9 @@
             SlipBtn.BackColor = Color.Blue;
             SlipBtn.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             SlipBtn.ForeColor = Color.White;
-            SlipBtn.Location = new Point(503, 432);
+            SlipBtn.Location = new Point(668, 432);
             SlipBtn.Name = "SlipBtn";
-            SlipBtn.Size = new Size(131, 44);
+            SlipBtn.Size = new Size(190, 44);
             SlipBtn.TabIndex = 21;
             SlipBtn.Text = "ออกใบเสร็จ";
             SlipBtn.UseVisualStyleBackColor = false;
@@ -165,7 +167,7 @@
             Price.Font = new Font("Segoe UI", 12F);
             Price.Location = new Point(465, 205);
             Price.Name = "Price";
-            Price.Size = new Size(292, 29);
+            Price.Size = new Size(411, 29);
             Price.TabIndex = 23;
             // 
             // TotalProduct
@@ -173,7 +175,7 @@
             TotalProduct.Font = new Font("Segoe UI", 12F);
             TotalProduct.Location = new Point(465, 271);
             TotalProduct.Name = "TotalProduct";
-            TotalProduct.Size = new Size(292, 29);
+            TotalProduct.Size = new Size(411, 29);
             TotalProduct.TabIndex = 24;
             // 
             // ProductID
@@ -182,7 +184,7 @@
             ProductID.FormattingEnabled = true;
             ProductID.Location = new Point(465, 63);
             ProductID.Name = "ProductID";
-            ProductID.Size = new Size(293, 29);
+            ProductID.Size = new Size(412, 29);
             ProductID.TabIndex = 25;
             ProductID.SelectedIndexChanged += ProductID_SelectedIndexChanged;
             // 
@@ -225,11 +227,31 @@
             AddBtn.UseVisualStyleBackColor = false;
             AddBtn.Click += AddBtn_Click_1;
             // 
+            // CustomerName
+            // 
+            CustomerName.Font = new Font("Segoe UI", 12F);
+            CustomerName.Location = new Point(708, 390);
+            CustomerName.Name = "CustomerName";
+            CustomerName.Size = new Size(169, 29);
+            CustomerName.TabIndex = 30;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.Location = new Point(639, 393);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 21);
+            label1.TabIndex = 29;
+            label1.Text = "ชื่อลูกค้า";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(809, 497);
+            ClientSize = new Size(889, 497);
+            Controls.Add(CustomerName);
+            Controls.Add(label1);
             Controls.Add(AddBtn);
             Controls.Add(DelBtn);
             Controls.Add(EditBtn);
@@ -264,7 +286,7 @@
         private Label label3;
         private Label label5;
         private Label label6;
-        private TextBox textBox1;
+        private TextBox CustomerName;
         private TextBox ProductName;
         private TextBox textBox3;
         private TextBox textBox4;
@@ -285,5 +307,6 @@
         private Button DelBtn;
         private Button AddBtn;
         private FolderBrowserDialog folderBrowserDialog1;
+        private Label label1;
     }
 }

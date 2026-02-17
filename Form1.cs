@@ -430,6 +430,7 @@ namespace Project
                     document.Add(new Paragraph("Tel: 02-123-4567", normalFont));
                     document.Add(new Paragraph("________________________________________________________"));
 
+                    document.Add(new Paragraph($"Customer Name: {CustomerName.Text}", normalFont));
                     document.Add(new Paragraph($"Date: {DateTime.Now:dd/MM/yyyy HH:mm}", normalFont));
                     document.Add(new Paragraph($"Receipt No: RC-{DateTime.Now:yyyyMMddHHmmss}", normalFont));
                     document.Add(new Paragraph("\n"));
@@ -476,6 +477,11 @@ namespace Project
 
         private void SlipBtn_Click(object sender, EventArgs e)
         {
+            if (CustomerName.Text == "" || CustomerName.Text == null)
+            {
+                MessageBox.Show("Please Enter Customer Name");
+                return;
+            }
             if (ProductID.SelectedItem == null)
             {
                 MessageBox.Show("Please select a product to generate receipt.");
@@ -509,7 +515,7 @@ namespace Project
                             // ✅ Price เป็น INTEGER ใน DB
                             decimal price = Convert.ToDecimal(reader.GetInt32(1));
 
-                            int quantity = reader.GetInt32(2);
+                            int quantity = Convert.ToInt32(TotalProduct.Text);
 
                             // ✅ สร้างใบเสร็จลง Downloads
                             string savedPath = CreateReceipt(productName, price, quantity);
