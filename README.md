@@ -1,3 +1,9 @@
+## สมาชิก
+**ศักดิ์พิมล ญาณโรจน์**
+: Coding / Github
+**อติวัณณ์ ภูริเลิศวาณิช**
+: UX XI / Diagram
+
 ## Project HelpDesk
 
 โปรเจกต์นี้เป็นระบบ HelpDesk แบบง่าย  
@@ -16,12 +22,61 @@
 
 ---
 
-## Technology Stack
+# 🛠️ Project HelpDesk (Product Management & Receipt System)
 
-- C# Windows Forms App  
-- SQLite Database (`mydatabase.db`)  
-- iTextSharp (PDF Generator)  
-- Visual Studio 2022+
+---
+
+## 📌 Project Overview
+
+**Project HelpDesk** คือโปรแกรมจัดการข้อมูลสินค้าแบบง่าย  
+พัฒนาโดยใช้ **Windows Forms (C#)** และฐานข้อมูล **SQLite**
+
+ระบบนี้ถูกออกแบบเพื่อช่วยให้ผู้ใช้งานสามารถ:
+
+- เพิ่ม / แก้ไข / ลบ ข้อมูลสินค้า (CRUD)
+- เลือกสินค้าโดยอ้างอิง ProductID
+- ออกใบเสร็จ PDF อัตโนมัติ
+- บันทึกไฟล์ PDF ลงโฟลเดอร์ Downloads ได้ทันที
+
+🎯 **วัตถุประสงค์หลักของโปรเจกต์**
+
+- ฝึกการทำงานของ CRUD กับ Database
+- ฝึกการเชื่อมต่อ SQLite ใน C#
+- ฝึกการสร้างเอกสาร PDF ด้วย iTextSharp
+- พัฒนาโปรแกรม HelpDesk เบื้องต้นที่ใช้งานได้จริง
+
+---
+
+## ⚙️ Technologies Used
+
+- **C# Windows Forms (.NET)**
+- **SQLite Database**
+- **Microsoft.Data.Sqlite**
+- **iTextSharp.LGPLv2.Core** (PDF Generator)
+- **Visual Studio 2022**
+- **PlantUML / Draw.io** (Diagram)
+
+---
+
+## ✅ Prerequisites
+
+ก่อนใช้งานโปรเจกต์นี้ ต้องมีสิ่งต่อไปนี้:
+
+- Windows OS
+- Visual Studio 2026
+- .NET SDK 10
+- NuGet Package Manager
+
+---
+
+## 📥 Installation Guide
+
+### 1) Clone Project จาก GitHub
+
+```bash
+git clone https://github.com/yourusername/ProjectHelpDesk.git
+cd ProjectHelpDesk
+```
 
 ---
 ## Use Case Diagram
@@ -31,10 +86,10 @@
 ## Sequence Diagram Add Product
 <img width="995" height="695" alt="image" src="https://github.com/user-attachments/assets/b6e85fb4-2356-4a28-8615-bb4a6d4727f1" />
 
----
 ## Sequence Diagram Generate Receipt PDF
 <img width="832" height="775" alt="image" src="https://github.com/user-attachments/assets/c4cf5f76-6053-4715-8208-8f701d20bbf0" />
 
 ---
+
 
 
