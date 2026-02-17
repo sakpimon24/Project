@@ -24,3 +24,17 @@
 - Visual Studio 2022+
 
 ---
+## Use Case Diagram
+<img width="832" height="775" alt="image" src="https://github.com/user-attachments/assets/c4cf5f76-6053-4715-8208-8f701d20bbf0" />
+
+---
+## Sequence Diagram Add Product
+<img width="995" height="695" alt="image" src="https://github.com/user-attachments/assets/b6e85fb4-2356-4a28-8615-bb4a6d4727f1" />
+
+---
+## Sequence Diagram Generate Receipt PDF
+<img width="832" height="775" alt="image" src="https://github.com/user-attachments/assets/c4cf5f76-6053-4715-8208-8f701d20bbf0" />
+
+---
+
+
