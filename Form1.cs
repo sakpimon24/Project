@@ -252,6 +252,7 @@ namespace Project
             Price.Text = "";
             TotalProduct.Text = "";
             ProductType.Text = "";
+            CustomerName.Text = "";
         }
 
         // ===== CRUD =====
