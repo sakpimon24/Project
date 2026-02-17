@@ -3,8 +3,9 @@
 : Coding / Github
 **อติวัณณ์ ภูริเลิศวาณิช**
 : UX XI / Diagram
+---
 
-## Project HelpDesk
+# 🛠️ Project HelpDesk (Product Management & Receipt System)
 
 โปรเจกต์นี้เป็นระบบ HelpDesk แบบง่าย  
 พัฒนาโดยใช้ **Windows Forms (C#)** และฐานข้อมูล **SQLite**  
@@ -19,10 +20,6 @@
 ✅ ลบข้อมูลสินค้าโดยอ้างอิง ProductID  
 ✅ แสดงข้อมูลทั้งหมดในตาราง DataGridView  
 ✅ ออกใบเสร็จ PDF และบันทึกอัตโนมัติลงโฟลเดอร์ Downloads  
-
----
-
-# 🛠️ Project HelpDesk (Product Management & Receipt System)
 
 ---
 
@@ -90,6 +87,7 @@ cd ProjectHelpDesk
 <img width="832" height="775" alt="image" src="https://github.com/user-attachments/assets/c4cf5f76-6053-4715-8208-8f701d20bbf0" />
 
 ---
+
 
 
 
